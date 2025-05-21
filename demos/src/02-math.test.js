@@ -12,14 +12,14 @@ test('divide 20 / 4 to equal 5', () => {
   expect(divide(6,3)).toBe(2);
 });
 
-test('divide 20 / 4 to equal 5', () => {
-  expect(divide(6,"test")).toBe(null);
+test('divide 6 over a non numeric value to obtain a null value', () => {
+  expect(divide(6,"test")).toBeNull();
 });
 
 test('get average of values [3, 7, 11] to be 7', () => {
   expect(average([3, 7, 11])).toBe(7);
 });
 
-test('get average of values [3, 7, 11] to be 7', () => {
-  expect(average([])).toBe(null);
+test('get average of no elements to obtain a null value', () => {
+  expect(average([])).toBeNull();
 });

@@ -19,11 +19,8 @@ function divide(a, b) {
 }
 
 function average(array) {
-  if (array.length !== 0) {
-    return array.reduce((a, b) => a + b) / array.length;
-  } else {
-    return null;
-  }
+  if (array.length === 0) return null;
+  return array.reduce((a, b) => a + b) / array.length;
 }
 
 module.exports = {sum, multiply, divide, average};
