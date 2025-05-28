@@ -10,11 +10,11 @@ test('subtract 3-10 to equal -7', () => {
 });
 
 // pruebas actividad 2
-test('check if 10 is even', () => {
+test('check if 10 is even, should return true', () => {
   expect(isEven(10)).toBe(true);
 });
 
-test('check if 3 is even', () => {
+test('check if 3 is even, should return false', () => {
   expect(isEven(3)).toBe(false);
 });
 
