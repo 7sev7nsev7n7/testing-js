@@ -19,9 +19,10 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
-        with: node-version: 22
-        cache: "npm"
-        cache-dependency-path: ./api/package-lock.json
+        with: 
+          node-version: 22
+          cache: "npm"
+          cache-dependency-path: ./api/package-lock.json
 
       - name: Install dependencies
         uses: npm ci
