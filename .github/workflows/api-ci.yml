@@ -8,7 +8,7 @@ on:
 
 jobs:
   unit-test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     defaults:
       run: 
@@ -28,4 +28,4 @@ jobs:
         run: npm ci
 
       - name: run unit tests
-        run: npm run unit tests
+        run: run unit tests
